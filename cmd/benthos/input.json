@@ -1,0 +1,3 @@
+{
+    "SOR": "Subject,SubjectType,Object,ObjectType,Relation\nRemus,PERSON,Romulus,PERSON,brother\nRomulus,PERSON,Remus,PERSON,brother\nRemus,PERSON,Rome,CITY,founded\nRomulus,PERSON,Rome,CITY,founded"
+}

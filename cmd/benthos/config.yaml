@@ -1,0 +1,12 @@
+input:
+  file:
+    paths: ["./input.json"]
+    codec: all-bytes
+
+output: 
+  cypher:
+    Database: "neo4j" 
+    Uri: "bolt://localhost:7687"
+    User: "neo4j"
+    Password: "password" #Auth has not yet been implemented - you must use a neo4j DB that has Auth disabled in it's settings
+    NoAuth: true
