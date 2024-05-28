@@ -4,16 +4,41 @@ input:
     codec: all-bytes
 
 output: 
-  cypher:
+  cypher: # Inserts a Node and a number of Relations to that Node 
     Database: "neo4j" 
     Uri: "bolt://localhost:7687"
-    NoAuth: true
+    NoAuth: true # Default true
+
 
 ### Auth Schemes 
 
 # NoAuth 
 # BasicAuth
+#  - username
+#  - password
+#  - realm
 # KerberosAuth
+#  - ticket
 # BearerAuth 
+#  - token 
 # CustomAuth 
+#  - scheme 
+#  - username
+#  - password
+#  - realm
+#  - parameters 
+
+
+
+## Query Write Options 
+
+# Merge 
+# ...
+
+
+## Return all nodes and relations: 
+# MATCH (n) OPTIONAL MATCH (n)-[r]->() RETURN n, r
+
+## Delete all nodes and relations
+# MATCH (n) DETACH DELETE n
 
